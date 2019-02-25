@@ -1,0 +1,11 @@
+.mainStyles {
+    background-color: rgb(255, 255, 255, 0.5);
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: gray;
+}

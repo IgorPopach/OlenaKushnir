@@ -1,0 +1,7 @@
+.home-page {
+    background-image: url('https://picsum.photos/g/1080/1920');
+    height: 1080px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
