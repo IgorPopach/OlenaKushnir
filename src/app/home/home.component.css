@@ -1,7 +1,13 @@
 .home-page {
-    background-image: url('https://picsum.photos/g/1080/1920');
-    height: 1080px;
-    background-position: center;
+    background-image: url('./../../assets/heavyGallery/2.png');
+    height: 1000px;
+    background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+/* .bg-image {
+    background-image: url('./../../assets/gallery/2.jpg');
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+} */

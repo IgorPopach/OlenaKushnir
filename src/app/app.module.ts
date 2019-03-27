@@ -5,6 +5,8 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgxAudioPlayerModule } from 'ngx-audio-player';
+import { Angular2ImageGalleryModule } from 'angular2-image-gallery';
 
 import { AppComponent } from './app.component';
 import { MediaComponent } from './media/media.component';
@@ -27,7 +29,9 @@ import { FooterComponent } from './footer/footer.component';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
+    NgxAudioPlayerModule,
+    Angular2ImageGalleryModule
   ],
   providers: [],
   bootstrap: [AppComponent]
