@@ -17,6 +17,7 @@ import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { LoginFormComponent } from './login-form/login-form.component';
+import { AdminPageComponent } from './admin-page/admin-page.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { LoginFormComponent } from './login-form/login-form.component';
     FooterComponent,
     AccordionComponent,
     LoginFormComponent,
+    AdminPageComponent,
   ],
   imports: [
     NgbModule,

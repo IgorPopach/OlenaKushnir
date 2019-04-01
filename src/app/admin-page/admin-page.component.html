@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row edit-photos">
+    <div class="col-6 photos-list">
+      <ul *ngFor="let photo of photosArray">
+        <li>{{photo.url}}</li>
+        <button (click)="Deletephoto(photo.id)">Delete</button>
+      </ul>
+    </div>
+    <div class="col-6 add-photos">
+      <input type="file" name="fileToUpload">
+      <button (click)="Addphoto()">Add</button>
+    </div>
+  </div>
+  <div class="row edit-songs">
+    <div class="col-6 songs-list">
+      <ul *ngFor="let song of songsArray">
+        <li>{{song.url}}</li>
+        <button (click)="Deletesong(song.id)">Delete</button>
+      </ul>
+    </div>
+    <div class="col-6 add-songs">
+      <input type="file" name="fileToUpload">
+      <button (click)="Addsong()">Add</button>
+    </div>
+  </div>
+  <div class="row edit-videos">
+
+  </div>
+</div>

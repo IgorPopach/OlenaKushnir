@@ -14,7 +14,7 @@ export class AccordionComponent implements OnInit {
   msaapPlaylist: Track[] = [
     {
       title: 'Audio One Title',
-      link: './../../assets/Малюй менеMx2!!!.mp3'
+      link: './../../assets/malui.mp3'
     },
     {
       title: 'Audio Two Title',
