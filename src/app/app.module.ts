@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
@@ -14,6 +15,8 @@ import { HeaderComponent } from './header/header.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
+import { AccordionComponent } from './accordion/accordion.component';
+import { LoginFormComponent } from './login-form/login-form.component';
 
 @NgModule({
   declarations: [
@@ -23,15 +26,18 @@ import { FooterComponent } from './footer/footer.component';
     ContactsComponent,
     HomeComponent,
     FooterComponent,
+    AccordionComponent,
+    LoginFormComponent,
   ],
   imports: [
-    NgbModule.forRoot(),
+    NgbModule,
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     AngularFontAwesomeModule,
     NgxAudioPlayerModule,
-    Angular2ImageGalleryModule
+    Angular2ImageGalleryModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

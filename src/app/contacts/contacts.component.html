@@ -6,4 +6,10 @@
       <p>Email: mail@gmail.com</p>
     </div>
   </div>
+  <div *ngIf="showLoginForm == true">
+    <app-login-form></app-login-form>
+  </div>
+  <div class="footer-admin">
+    <button type="submit" (click)="confirm()">admin</button>
+  </div>
 </div>
