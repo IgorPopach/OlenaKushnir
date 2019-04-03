@@ -8,6 +8,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgxAudioPlayerModule } from 'ngx-audio-player';
 import { Angular2ImageGalleryModule } from 'angular2-image-gallery';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { environment } from '../environments/environment';
 
 import { AppComponent } from './app.component';
 import { MediaComponent } from './media/media.component';
@@ -18,6 +22,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { LoginFormComponent } from './login-form/login-form.component';
 import { AdminPageComponent } from './admin-page/admin-page.component';
+import { AuthService } from './auth.service';
 
 @NgModule({
   declarations: [
@@ -39,9 +44,12 @@ import { AdminPageComponent } from './admin-page/admin-page.component';
     AngularFontAwesomeModule,
     NgxAudioPlayerModule,
     Angular2ImageGalleryModule,
-    FormsModule
+    FormsModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule, // imports firebase/firestore, only needed for database features
+    AngularFireAuthModule, // imports firebase/auth, only needed for auth features
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
